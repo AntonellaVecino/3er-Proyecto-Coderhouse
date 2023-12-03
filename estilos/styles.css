@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
-.cartas a, .carruselIndex .carousel-caption .botonCarrusel, .presentacion .botonCallToAction {
+.jumbotronAbout a, .cartas a, .carruselIndex .carousel-caption .botonCarrusel, .presentacion .botonCallToAction {
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -80,6 +80,12 @@ body {
 }
 .footer .copyright {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* En index */
@@ -166,7 +172,7 @@ body {
   background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
   background-size: cover;
 }
-.videoPresentacion h3 {
+.videoPresentacion h2 {
   color: black;
   text-align: center;
   text-decoration: overline;
@@ -244,6 +250,195 @@ body {
   object-fit: cover;
 }
 
+/* About us */
+.jumbotronAbout {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.jumbotronAbout h1 {
+  text-shadow: 2px 2px 5px white;
+}
+.jumbotronAbout p {
+  text-shadow: 2px 2px 5px black;
+}
+.jumbotronAbout a:hover {
+  background-color: rgb(69, 255, 1);
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 2px 0px 10px 5px gold;
+}
+
+.descripcionElvis {
+  background-color: rgba(34, 139, 34, 0.674);
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.descripcionElvis img {
+  border: 3px solid black;
+}
+.descripcionElvis h2 {
+  text-shadow: 5px -2px 4px gold;
+  color: black;
+}
+.descripcionElvis ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.descripcionElvis ul li i {
+  font-size: 25px;
+}
+.descripcionElvis p {
+  text-shadow: 2px 2px 5px black;
+}
+.descripcionElvis i:hover {
+  animation-name: aumentoIcono;
+  animation-duration: 1.5s;
+  transition: 0.5s;
+}
+
+.trabajosFotos {
+  background-image: linear-gradient(rgb(9, 69, 9), #0b980b, #21db21, rgb(9, 69, 9));
+}
+.trabajosFotos h2 {
+  padding-bottom: 50px;
+  text-shadow: 2px 2px 5px black;
+}
+.trabajosFotos img {
+  width: 300px;
+  height: 300px;
+  transition: 0.5s;
+}
+.trabajosFotos img:hover {
+  transform: scale(0.98);
+  border: 3px solid black;
+}
+
+.elEstudio {
+  margin-top: 150px;
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.elEstudio h3 {
+  text-decoration: overline;
+  text-shadow: 2px 2px 5px white;
+}
+.elEstudio p {
+  letter-spacing: 2px;
+}
+.elEstudio .fotoMain {
+  height: 80vh;
+}
+.elEstudio .localAbout img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+/* Tatuajes */
+.jumbotronTatuajes {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.jumbotronTatuajes h1 {
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px white;
+}
+.jumbotronTatuajes p {
+  text-align: center;
+}
+.jumbotronTatuajes p a {
+  text-decoration: none;
+  color: grey;
+}
+
+.estilos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.estilos .titulosPresentacion {
+  background-color: rgba(42, 201, 42, 0.679);
+  border-radius: 5px;
+}
+.estilos .titulosPresentacion h2 {
+  text-shadow: 2px 2px 5px white;
+}
+.estilos p {
+  text-shadow: 2px 2px 5px black;
+}
+.estilos img {
+  width: 250px;
+  height: 250px;
+}
+
+.videoYoutube {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.videoYoutube h3 {
+  padding-bottom: 25px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.cotizacion {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.cotizacion .guia {
+  background-color: rgba(42, 201, 42, 0.679);
+}
+.cotizacion .guia h3, .cotizacion .guia p {
+  text-shadow: 2px 2px 5px black;
+}
+.cotizacion .guia ul {
+  text-shadow: 2px 2px 5px white;
+}
+.cotizacion .guia img {
+  animation: zoomGrandeChico 4s ease-in-out infinite;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.714) 40%, rgba(0, 0, 0, 0) 60%);
+}
+@keyframes zoomGrandeChico {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cotizacion .guia .pulpo2 {
+  transform: scaleX(-1);
+}
+.cotizacion .descripcionPrecios {
+  text-shadow: 2px 2px 5px black;
+}
+
+.precios {
+  background-image: radial-gradient(rgb(9, 69, 9), #0b980b, #14ba14, #21db21);
+}
+.precios .carousel img {
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+}
+.precios .carousel h4 {
+  text-shadow: 2px 2px 5px black;
+}
+.precios .carousel .dibujoRosa {
+  transform: rotate(90deg);
+}
+.precios .carousel .pezKoi {
+  transform: rotate(90deg);
+}
+.precios .carousel-caption {
+  font-weight: bolder;
+}
+
+/* MEDIA QUERIES */
 /* medias de index */
 @media screen and (min-width: 320px) and (max-width: 1023px) {
   .galeriaTrabajos .foto {

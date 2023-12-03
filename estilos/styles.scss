@@ -18,7 +18,7 @@ $sombraBox: 2px 0px 10px 5px gold;
 $colorFondo1: rgb(69, 255, 1);
 $colorFondo2: purple;
 $colorFondo3: rgba(34, 139, 34, 0.674);
-
+$colorResaltado: rgba(42, 201, 42, 0.679);
 @mixin estiloFotos1{
   border: 3px solid black;
   border-radius: 10px;
@@ -130,7 +130,11 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-  
+.breadcrumb{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
   /* En index */
   /* colores para la presentacion */
@@ -223,7 +227,7 @@ body {
     flex-flow: column wrap;
     background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
     background-size: cover;
-    h3 {
+    h2 {
       color: $colorBase3;
       text-align: center;
       text-decoration: overline;
@@ -304,7 +308,196 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 }
 
 
+/* About us */
+.jumbotronAbout{
+  background-color: $colorFondo3;
+  h1{
+    text-shadow: $sombraTextoWhite;
+  }
+  p {
+    text-shadow: $sombraTextoBlack;
+  }
+  a {
+    @extend %estilosBotones;
+  }
+  & a:hover{
+    @include botonesHover();
+  }
+}
+.descripcionElvis {
+  background-color: $colorFondo3;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  img{
+    border: $bordes;
+  }
+  h2{
+    text-shadow: $sombraTexto;
+    color: $colorBase3;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    li {
+      i{
+        font-size: 25px;
+      }
+    }
+  }
+  p {
+    text-shadow: $sombraTextoBlack;
+  }
+  & i:hover {
+      animation-name: aumentoIcono;
+      animation-duration: 1.5s;
+      transition: 0.5s;
+  }
+}
+.trabajosFotos{
+  background-image: linear-gradient($colorCentro ,$colorPrimero, $colorExterior, $colorCentro);
+  h2{
+    padding-bottom: 50px;
+    text-shadow: $sombraTextoBlack;
+  }
+    img{
+      width: 300px;
+      height: 300px;
+      transition: 0.5s;
+    }
+    & img:hover{
+      transform: scale(0.98);
+      border: $bordes;
+    }
+    
+}
+.elEstudio{
+  margin-top: 150px;
+  background-color: $colorFondo3;
+  h3 {
+    text-decoration: overline;
+    text-shadow: $sombraTextoWhite;
+  }
+  p {
+    letter-spacing: 2px;
+  }
+  .fotoMain{
+    height: 80vh;
+  }
+  .localAbout img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
 
+/* Tatuajes */
+.jumbotronTatuajes{
+  background-color: $colorFondo3;
+  h1{
+    text-decoration: underline;
+    text-shadow: $sombraTextoWhite;
+  }
+  p{
+    text-align: center;
+    a{
+      text-decoration: none;
+      color: grey;
+    }
+  }
+}
+.estilos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: $colorFondo3;
+  .titulosPresentacion{
+    background-color: $colorResaltado;
+    border-radius: 5px;
+    h2{
+      text-shadow: $sombraTextoWhite;
+    }
+  }
+  p{
+    text-shadow: $sombraTextoBlack;
+  }
+  img{
+    width: 250px;
+    height: 250px;
+  }
+}
+.videoYoutube {
+  background-color: $colorFondo3;
+    h3 {
+      padding-bottom: 25px;
+      text-shadow: $sombraTextoBlack;
+    }
+}
+.cotizacion {
+    background-color: $colorFondo3;
+    .guia{
+      background-color: $colorResaltado;
+      h3, p {
+        text-shadow: $sombraTextoBlack;
+      }
+      ul{
+        text-shadow: $sombraTextoWhite;
+      }
+      img {
+        animation: zoomGrandeChico 4s ease-in-out infinite; 
+        width: 250px;
+        height: 250px;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.714) 40%, rgba(0, 0, 0, 0) 60%);
+      }
+      @keyframes zoomGrandeChico {
+        0% {
+          transform: scale(1); 
+        }
+        50% {
+          transform: scale(1.10); 
+        }
+        100% {
+          transform: scale(1); 
+        }
+      }
+      .pulpo2{
+        transform: scaleX(-1);
+      }
+    }
+    .descripcionPrecios {
+      text-shadow: $sombraTextoBlack;
+    }
+}
+.precios {
+  background-image: $miFondoPresentacion;
+        .carousel {
+          img{
+            object-fit: contain;
+            width: 600px;
+            height: 600px;  
+          }
+          h4{
+            text-shadow: $sombraTextoBlack;
+          }
+          .dibujoRosa{
+            transform: rotate(90deg);
+          }
+          .pezKoi {
+            transform: rotate(90deg);
+          }
+        }
+        .carousel-caption{
+          font-weight: bolder;
+        }
+}
+
+
+
+/* MEDIA QUERIES */
 /* medias de index */
 @media screen and (min-width: 320px) and (max-width: 1023px) {
   .galeriaTrabajos{
