@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
-.jumbotronAbout a, .cartas a, .carruselIndex .carousel-caption .botonCarrusel, .presentacion .botonCallToAction {
+.jumbotronAbout a, .cartas a, .carruselProductos .card a, .carruselIndex .carousel-caption .botonCarrusel, .presentacion .botonCallToAction {
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -82,14 +82,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.breadcrumb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 /* En index */
-/* colores para la presentacion */
 .presentacion {
   background-image: radial-gradient(rgb(9, 69, 9), #0b980b, #14ba14, #21db21);
   letter-spacing: 3px;
@@ -99,7 +92,7 @@ body {
   text-shadow: 2px 2px 5px white;
   font-size: 40px;
 }
-.presentacion h2, .presentacion h4, .presentacion h5 {
+.presentacion h2, .presentacion h3, .presentacion h4, .presentacion h5, .presentacion h6 {
   text-shadow: 2px 2px 5px black;
 }
 .presentacion .redSocial {
@@ -204,27 +197,27 @@ body {
 }
 
 /* fondo para cards */
-.cartas {
+.cartas, .carruselProductos .card {
   margin-top: 50px;
   background-color: rgba(34, 139, 34, 0.674);
 }
-.cartas .tituloCards {
+.cartas .tituloCards, .carruselProductos .card .tituloCards {
   text-decoration: overline;
   color: black;
   text-shadow: 2px 2px 5px white;
 }
-.cartas .cards {
+.cartas .cards, .carruselProductos .card .cards {
   height: auto;
   font-size: 16px;
 }
-.cartas .card {
+.cartas .card, .carruselProductos .card .card {
   margin-top: 50px;
   font-size: 18px;
   border: 3px solid black;
   border-radius: 5px;
   background-image: radial-gradient(rgb(249, 58, 182), rgb(235, 28, 194), purple);
 }
-.cartas img {
+.cartas img, .carruselProductos .card img {
   padding: 5px;
   height: 300px;
   object-fit: cover;
@@ -410,7 +403,7 @@ body {
     transform: scale(1);
   }
 }
-.cotizacion .guia .pulpo2 {
+.cotizacion .guia .pulpoInvertido {
   transform: scaleX(-1);
 }
 .cotizacion .descripcionPrecios {
@@ -436,6 +429,41 @@ body {
 }
 .precios .carousel-caption {
   font-weight: bolder;
+}
+
+/* Cuidados */
+.jumboCuidado {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.jumboCuidado .tablaCuidado {
+  border: 3px solid black;
+  background-color: rgba(42, 201, 42, 0.679);
+}
+.jumboCuidado .tablaCuidado a {
+  text-decoration: none;
+  color: white;
+}
+
+.carruselProductos {
+  background-color: rgba(34, 139, 34, 0.674);
+}
+.carruselProductos h3 {
+  text-shadow: 2px 2px 5px white;
+}
+.carruselProductos p {
+  text-shadow: 2px 2px 5px black;
+}
+.carruselProductos .card {
+  background-image: radial-gradient(rgb(249, 58, 182), rgb(235, 28, 194), purple);
+  border: 3px solid black;
+}
+.carruselProductos .card img {
+  object-fit: contain;
+}
+.carruselProductos .card a:hover {
+  background-color: rgb(69, 255, 1);
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 2px 0px 10px 5px gold;
 }
 
 /* MEDIA QUERIES */

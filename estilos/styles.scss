@@ -130,14 +130,8 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-.breadcrumb{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
   /* En index */
-  /* colores para la presentacion */
   $colorCentro: rgb(9, 69, 9);
   $colorPrimero: #0b980b;
   $colorExterior: #21db21; 
@@ -151,7 +145,7 @@ body {
       text-shadow: $sombraTextoWhite;
       font-size: 40px;
     }
-    h2, h4, h5{
+    h2, h3, h4, h5, h6{
       text-shadow: $sombraTextoBlack;
     }
     .redSocial{
@@ -464,7 +458,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
           transform: scale(1); 
         }
       }
-      .pulpo2{
+      .pulpoInvertido{
         transform: scaleX(-1);
       }
     }
@@ -494,6 +488,46 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
           font-weight: bolder;
         }
 }
+
+
+/* Cuidados */
+.jumboCuidado {
+  background-color: $colorFondo3;
+  .tablaCuidado {
+    border: $bordes;
+    background-color: $colorResaltado;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.carruselProductos {
+  background-color: $colorFondo3;
+    h3 {
+      text-shadow: $sombraTextoWhite;
+    }
+    p {
+      text-shadow: $sombraTextoBlack;
+    }
+  .card {
+    background-image: $fondoCards;
+      @extend .cartas;
+      border: $bordes;
+      img{
+        object-fit: contain;
+      }
+      & a:hover {
+        @include botonesHover();
+      }
+  }
+}
+
+
+
+
+
 
 
 
