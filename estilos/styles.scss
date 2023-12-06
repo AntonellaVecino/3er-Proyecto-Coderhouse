@@ -143,21 +143,9 @@ body {
     color: $colorBase3;
     text-shadow: $sombraTextoWhite;
   }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-shadow: $sombraTextoBlack;
-  }
   h2 {
+    text-shadow: $sombraTextoBlack;
     font-size: 25px;
-  } 
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 18px;
   }
   .listaRedes {
     flex-flow: row wrap;
@@ -200,28 +188,13 @@ body {
   img {
     height: 100vh;
   }
-  .carousel-caption {
-    h1 {
-      font-size: 40px;
-      color: $colorBase3;
-      text-shadow: $sombraTexto;
-      margin-bottom: 20px;
-    }
-    .botonCarrusel {
-      @extend %estilosBotones;
-    }
-
-    & a:hover {
-      @include botonesHover;
-    }
-  }
 }
 
 .jumbotron {
   font-size: 25px;
   text-align: center;
   background-color: $colorFondo3;
-  h1 {
+  h3 {
     color: $colorBase3;
     text-shadow: $sombraTexto;
     font-size: 2em;
@@ -235,7 +208,7 @@ body {
   flex-flow: column wrap;
   background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
   background-size: cover;
-  h2 {
+  h3 {
     color: $colorBase3;
     text-align: center;
     text-decoration: overline;
@@ -261,13 +234,14 @@ body {
   }
 }
 /* fondo para cards */
-$colorCards1: purple;
-$colorCards2: rgb(235, 28, 194);
-$colorCards3: rgb(249, 58, 182);
+$colorCards1: rgb(88, 88, 88);
+$colorCards2: rgb(41, 41, 41);
+$colorCards3: rgb(0, 0, 0);
 $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 .cartas {
   margin-top: 50px;
   background-color: $colorFondo3;
+
   .tituloCards {
     text-decoration: overline;
     color: $colorBase3;
@@ -295,7 +269,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 }
 .carruselVideos {
   background-color: $colorFondo3;
-  h2 {
+  h4 {
     color: $colorBase3;
     text-shadow: $sombraTextoWhite;
     text-decoration: overline;

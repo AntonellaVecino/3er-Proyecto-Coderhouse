@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
 /* fondo para resaltar */
 /* mixin */
-.jumbotronAbout a, .cartas a, .carruselProductos .card a, .carruselIndex .carousel-caption .botonCarrusel, .presentacion .botonCallToAction {
+.jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -95,21 +95,9 @@ body {
   color: black;
   text-shadow: 2px 2px 5px white;
 }
-.presentacion h2,
-.presentacion h3,
-.presentacion h4,
-.presentacion h5,
-.presentacion h6 {
-  text-shadow: 2px 2px 5px black;
-}
 .presentacion h2 {
+  text-shadow: 2px 2px 5px black;
   font-size: 25px;
-}
-.presentacion h3 {
-  font-size: 20px;
-}
-.presentacion h4 {
-  font-size: 18px;
 }
 .presentacion .listaRedes {
   flex-flow: row wrap;
@@ -152,24 +140,13 @@ body {
 .carruselIndex img {
   height: 100vh;
 }
-.carruselIndex .carousel-caption h1 {
-  font-size: 40px;
-  color: black;
-  text-shadow: 5px -2px 4px gold;
-  margin-bottom: 20px;
-}
-.carruselIndex .carousel-caption a:hover {
-  background-color: rgb(69, 255, 1);
-  border: 3px solid rgb(0, 0, 0);
-  box-shadow: 2px 0px 10px 5px gold;
-}
 
 .jumbotron {
   font-size: 25px;
   text-align: center;
   background-color: rgba(34, 139, 34, 0.674);
 }
-.jumbotron h1 {
+.jumbotron h3 {
   color: black;
   text-shadow: 5px -2px 4px gold;
   font-size: 2em;
@@ -184,7 +161,7 @@ body {
   background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
   background-size: cover;
 }
-.videoPresentacion h2 {
+.videoPresentacion h3 {
   color: black;
   text-align: center;
   text-decoration: overline;
@@ -233,7 +210,7 @@ body {
   font-size: 18px;
   border: 3px solid black;
   border-radius: 5px;
-  background-image: radial-gradient(rgb(249, 58, 182), rgb(235, 28, 194), purple);
+  background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
 }
 .cartas img, .carruselProductos .card img {
   padding: 5px;
@@ -243,7 +220,7 @@ body {
 .carruselVideos {
   background-color: rgba(34, 139, 34, 0.674);
 }
-.carruselVideos h2 {
+.carruselVideos h4 {
   color: black;
   text-shadow: 2px 2px 5px white;
   text-decoration: overline;
@@ -475,7 +452,7 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 .carruselProductos .card {
-  background-image: radial-gradient(rgb(249, 58, 182), rgb(235, 28, 194), purple);
+  background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
   border: 3px solid black;
 }
 .carruselProductos .card img {
@@ -531,7 +508,7 @@ body {
     display: none;
   }
   .carruselProductos .card {
-    background-image: radial-gradient(rgb(249, 58, 182), rgb(235, 28, 194), purple);
+    background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
     border: 3px solid black;
     height: 80vh;
   }
