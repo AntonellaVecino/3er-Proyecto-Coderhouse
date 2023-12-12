@@ -3,7 +3,6 @@
 /* fondo para resaltar */
 /* mixin */
 .jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
-  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -145,7 +144,6 @@ body {
 .jumbotron {
   font-size: 25px;
   text-align: center;
-  background-color: rgba(34, 139, 34, 0.674);
 }
 .jumbotron h3 {
   color: black;
@@ -154,13 +152,10 @@ body {
 }
 
 .videoPresentacion {
-  background-color: rgba(34, 139, 34, 0.674);
   border-radius: 10px;
   display: flex;
   margin-top: 100px;
   flex-flow: column wrap;
-  background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
-  background-size: cover;
 }
 .videoPresentacion h3 {
   color: black;
@@ -177,14 +172,15 @@ body {
 
 .galeriaTrabajos {
   border-radius: 10px;
+  background-color: rgba(34, 139, 34, 0.674);
 }
 .galeriaTrabajos .foto {
   border: 3px solid black;
   border-radius: 10px;
   transition: 0.3s;
   margin-top: 50px;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 .galeriaTrabajos .foto:hover {
   border: 5px solid gold;
@@ -195,10 +191,8 @@ body {
 /* fondo para cards */
 .cartas, .carruselProductos .card {
   margin-top: 50px;
-  background-color: rgba(34, 139, 34, 0.674);
 }
 .cartas .tituloCards, .carruselProductos .card .tituloCards {
-  text-decoration: overline;
   color: black;
   text-shadow: 2px 2px 5px white;
 }
@@ -215,9 +209,8 @@ body {
 }
 .cartas img, .carruselProductos .card img {
   padding: 5px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 250px;
+  object-fit: cover;
 }
 .carruselVideos {
   background-color: rgba(34, 139, 34, 0.674);
@@ -233,8 +226,7 @@ body {
 }
 .carruselVideos .carousel-item {
   height: 90vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* About us */
@@ -338,8 +330,7 @@ body {
   align-items: center;
   flex-flow: column wrap;
   row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .estilos .titulosPresentacion {
   background-color: rgba(42, 201, 42, 0.679);
@@ -399,8 +390,7 @@ body {
 }
 
 .precios .carousel img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 600px;
   height: 600px;
 }
@@ -460,9 +450,11 @@ body {
   background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
   border: 3px solid black;
 }
+.carruselProductos .card .card-title, .carruselProductos .card .card-text {
+  font-size: 16px;
+}
 .carruselProductos .card img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .carruselProductos .card a:hover {
   background-color: rgb(69, 255, 1);
@@ -513,14 +505,32 @@ body {
   .presentacion .fotoPulpo {
     display: none;
   }
+  .trabajosFotos img {
+    width: 200px;
+    height: 200px;
+  }
+  .elEstudio .fotoMain {
+    height: 300px;
+  }
+  .elEstudio .localAbout img {
+    width: 200px;
+    height: 200px;
+  }
+  .estilos img {
+    width: 200px;
+    height: 200px;
+  }
   .carruselProductos .card {
     background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
     border: 3px solid black;
-    height: 80vh;
+    height: 19rem;
+    display: flex;
+    align-items: center;
   }
   .carruselProductos .card img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
   }
   .carruselProductos .card .card-title, .carruselProductos .card .card-text, .carruselProductos .card a {
     font-size: 16px;
@@ -564,4 +574,6 @@ body {
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 2px 0px 10px 5px gold;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
