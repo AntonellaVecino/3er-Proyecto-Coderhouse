@@ -3,6 +3,7 @@
 /* fondo para resaltar */
 /* mixin */
 .jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -138,11 +139,12 @@ body {
   box-shadow: 2px 0px 10px 5px gold;
 }
 
+.carruselIndex {
+  flex-wrap: wrap;
+}
 .carruselIndex img {
   border: 3px solid black;
-}
-.carruselIndex p {
-  font-size: 18px;
+  width: 100%;
 }
 
 .jumbotron {
@@ -230,7 +232,8 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 .carruselVideos .carousel-item {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* About us */
@@ -334,7 +337,8 @@ body {
   align-items: center;
   flex-flow: column wrap;
   row-gap: 10px;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .estilos .titulosPresentacion {
   background-color: rgba(42, 201, 42, 0.679);
@@ -394,7 +398,8 @@ body {
 }
 
 .precios .carousel img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 600px;
   height: 600px;
 }
@@ -458,7 +463,8 @@ body {
   font-size: 16px;
 }
 .carruselProductos .card img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .carruselProductos .card a:hover {
   background-color: rgb(69, 255, 1);
@@ -529,7 +535,8 @@ body {
     align-items: center;
   }
   .carruselProductos .card img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 150px;
     height: 150px;
   }
@@ -557,6 +564,11 @@ body {
     width: 250px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 998px) {
+  .carruselIndex p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 1023px) {
   .galeriaTrabajos .foto {
     margin-top: 10px;
@@ -575,6 +587,4 @@ body {
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 2px 0px 10px 5px gold;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
