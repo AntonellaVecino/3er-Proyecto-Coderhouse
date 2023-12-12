@@ -20,7 +20,12 @@
     <header>
         <nav class="navbar navbar-expand-xl  navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="./imgs/multimedia/logo-removebg.png" alt="Logo" width="90px" height="auto"></a>
+              <div class="col-6">
+              <a class="navbar-brand" href="index.html">
+                <img src="./imgs/multimedia/logo-removebg.png" alt="Logo" width="90px" height="auto">
+              </a>
+            </div>
+            <div class="col-6 d-flex columnaLinks">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -51,6 +56,7 @@
                       <li><a class="dropdown-item redes" href="mailto:fonsink.tattoo@gmail.com" target="_blank"><i class="fa-regular fa-envelope" style="color: #000000;"></i></i>Contáctanos</a></li>
                     </ul>
                   </li>
+                </div>
               </div>
             </div>
           </nav>
@@ -61,7 +67,7 @@
     <div class="container-sm mt-3">
     <div id="presentacion" class="presentacion animate__animated animate__backInUp animate__duration:3s; animate__delay-0.5s m-5">
       <div class="row">
-        <div class="col-md-6 p-4 text-center mt-3">
+        <div class="col-md-12 col-lg-6 p-4 text-center mt-3">
           <h1 class="pb-3">Fonsink Tattoo Studio</h1>
           <h2 class="pb-3">El Estudio donde haremos realidad tu sueño.</h2>
           <p>Aquí encontrarás toda la información que necesitas para tatuarte, con los mejores profesionales.</p>
@@ -77,7 +83,7 @@
           <p>¿Quieres tatuarte con nosotros?</p> 
           <p><a class="btn botonCallToAction" href="./pages/formulario.html">Haz tu reserva Aquí</a></p>
         </div>
-        <div class="col-md-6 p-4 d-flex">
+        <div class="col-md-12 col-lg-6 p-4 d-flex">
             <img src="./imgs/Background/iconoPulpo.png" alt="fotoFondo" class="img-fluid fotoPulpo rounded">
         </div>
     </div>
@@ -85,40 +91,35 @@
   </div>
     <!-- fin presentacion -->
     <!-- Inicio del Carrusel -->
-    <div class="container">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade m-3 carruselIndex" data-bs-ride="carousel">
+    <div class="container-fluid p-5 carruselIndex">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade m-3 p-1" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./imgs/multimedia/LocalCarrete1.jfif" class="d-block w-100" alt="foto1">
+            <img src="./imgs/multimedia/LocalCarrete1.jfif" class="d-block w-100 img-fluid" alt="foto del estudio">
           </div>
           <div class="carousel-item">
-            <img src="./imgs/multimedia/localCarrete2.jfif" class="d-block w-100" alt="foto2">
+            <img src="./imgs/multimedia/localCarrete2.jfif" class="d-block w-100 img-fluid" alt="sector del tatuador">
           </div>
           <div class="carousel-item">
-            <img src="./imgs/multimedia/localCarrete3.jfif" class="d-block w-100" alt="foto3">
+            <img src="./imgs/multimedia/localCarrete3.jfif" class="d-block w-100 img-fluid" alt="sala de espera del local">
           </div>
           <div class="carousel-item">
-            <img src="./imgs/multimedia/localCarrete4.jfif" class="d-block w-100" alt="foto4">
+            <img src="./imgs/multimedia/localCarrete4.jfif" class="d-block w-100 img-fluid" alt="sector de cliente">
           </div>
           <div class="carousel-item">
-            <img src="./imgs/multimedia/localCarrete5.jfif" class="d-block w-100" alt="foto5">
+            <img src="./imgs/multimedia/localCarrete5.jfif" class="d-block w-100 img-fluid" alt="sector de tatuado">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      <p class="text-center">
+        <em>Nuestro estudio, equipado con las mejores tecnologías, tiene lo que necesitas para tu seguridad y comodidad en todo momento. Ubicado en el centro de A Coruña, abrió sus puertas en 2022 y, desde entonces, nuestro artista se ha convertido en una gran influencia en el mundo del tatuaje en España. Nuestro nombre resuena en todas las competencias nacionales, siendo conocidos por nuestros trabajos de alta calidad, y la mejor atención profesional, que marcan una gran diferencia a la hora de realizarte un tatuaje. Visitanos en nuestro estudio, inspírate, y tatúate con los mejores profesionales de Galicia.</em>
+      </p>
     </div>
     <!-- Fin del Carrusel -->
     <!-- Comienza Jumbotron -->
     <div class="container-fluid p-3">
     <div class="jumbotron mt-5 p-2 text-white text-center rounded">
-      <h3>Bienvenidos a Fonsink Tattoo Studio</h3>
+      <h3 class="pb-3">Bienvenidos a Fonsink Tattoo Studio</h3>
       <p>Aquí podras ver nuestros trabajos, orientarte con ejemplos y estilos variados, e inspirarte con nuestros diseños exclusivos. Te esperamos en nuestro espacio de trabajo, donde serás atendido con las mejores tecnologías y una cálida ambientación, que nos destacan y hacen de nuestro trabajo el mejor de Galicia y toda España.</p>
       <p> Adéntrate y conoce más acerca del cuidado de tu tatuaje, los estilos que trabajamos, y ¡Solicita un espacio en nuestra agenda! ¿Qué esperas para hacer tu reserva? Te esperamos en Fonsink Tattoo Studio, donde haremos realidad tu sueño.</p>
     </div>
@@ -128,6 +129,9 @@
     <div class="container-fluid">
     <div class="videoPresentacion">
       <h3>Conoce los trabajos del Artista Elvis Machado</h3>
+      <p class="text-center pb-5">
+        <em>Desde el puntillismo, hasta colores sólidos, disponemos de una amplia gama de ejemplos para que te orientes en la realización de tu tatuaje.</em>
+      </p>
       <div class="embed-responsive embed-responsive-16by9">
         <blockquote class="tiktok-embed"
         cite="https://www.tiktok.com"
@@ -148,13 +152,13 @@
     <div class="galeriaTrabajos container-sm text-center">
     <div class="row">
       <div class="col-md-3">
-        <img class="img-fluid foto foto1" src="./imgs/tatuajes/alacran.jpeg" alt="Alacran">
+        <img class="img-fluid foto foto1" src="./imgs/tatuajes/alacran.jpeg" alt="Tatuaje de Alacran">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto2" src="./imgs/tatuajes/dino.jpeg" alt="Dino">
+        <img class="img-fluid foto foto2" src="./imgs/tatuajes/dino.jpeg" alt="Tatuaje de Dinosaurio con puntillismo">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto3" src="./imgs/tatuajes/dragon.jpeg" alt="dragon">
+        <img class="img-fluid foto foto3" src="./imgs/tatuajes/dragon.jpeg" alt="tatuaje de dragón sombreado">
       </div>
       <div class="col-md-3">
         <img class="img-fluid foto foto10" src="./imgs/tatuajes/rosasombreada.jpeg" alt="Rosa con Sombra" >
@@ -162,53 +166,56 @@
   </div>
     <div class="row pt-3">
       <div class="col-md-3">
-        <img class="img-fluid foto foto4" src="./imgs/tatuajes/flor.jpeg" alt="Flor">
+        <img class="img-fluid foto foto4" src="./imgs/tatuajes/flor.jpeg" alt="Flor con relleno sólido">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto5" src="./imgs/tatuajes/leon.jpeg" alt="Leo Zodiaco">
+        <img class="img-fluid foto foto5" src="./imgs/tatuajes/leon.jpeg" alt="Leon con vasija que representa a Leo del Zodiaco">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto6" src="./imgs/tatuajes/nombres.jpeg" alt="Nombres">
+        <img class="img-fluid foto foto6" src="./imgs/tatuajes/nombres.jpeg" alt="Nombres con letras de Disney, y un corazon">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto12" src="./imgs/tatuajes/WhatsApp Image 2023-10-18 at 22.40.07 (2).jpeg" alt="Patricio">
+        <img class="img-fluid foto foto12" src="./imgs/tatuajes/WhatsApp Image 2023-10-18 at 22.40.07 (2).jpeg" alt="Patricio de Bob Esponja, a color">
       </div>
   </div>
     <div class="row pt-3 pb-5">
       <div class="col-md-3">
-        <img class="img-fluid foto foto7" src="./imgs/tatuajes/pajaro.jpeg" alt="Pajaro">
+        <img class="img-fluid foto foto7" src="./imgs/tatuajes/pajaro.jpeg" alt="Gorrión sombreado, grande">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto8" src="./imgs/tatuajes/resiliencia.jpeg" alt="Frase"> 
+        <img class="img-fluid foto foto8" src="./imgs/tatuajes/resiliencia.jpeg" alt="Frase resiliencia en latin"> 
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto9" src="./imgs/tatuajes/rosa.jpeg" alt="Rosa">
+        <img class="img-fluid foto foto9" src="./imgs/tatuajes/rosa.jpeg" alt="Rosa pequeña, relleno sólido">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid foto foto11" src="./imgs/tatuajes/runas.jpeg" alt="Runa"> 
+        <img class="img-fluid foto foto11" src="./imgs/tatuajes/runas.jpeg" alt="Mapa vikingo, con runas, símbolos de los aesir, y un Yggdrasil"> 
       </div>
   </div>
   </div>
     <!-- Fin Galeria Trabajos -->
   <!-- Inicio cards con posts instagram -->
   <div class="container-md py-5 cartas">
-    <h3 class="text-center tituloCards mt-4"> Publicaciones recientes de nuestro Instagram:</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4 py-5 cards m-4">
-        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" class="col">
-            <div class="card d-flex align-items-center">
-                <img src="./imgs/tatuajes/leon.jpeg" class="card-img-top" alt="león">
-                <div class="card-body text-center">
-                    <p class="card-title"><strong>Signo del Zodiaco</strong></p>
-                    <p class="card-text">Trabajo con línea fina, y un delicado sombreado. El diseño fue personalizado a gusto del cliente.</p>
-                </div>
-                <div class="mb-5 d-flex justify-content-around botonesPosts">
-                  <a href="https://www.instagram.com/p/CvH1lC2ODbK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
-                </div>
+    <p class="text-center">
+      <em>Mantente al tanto de los increíbles diseños que realizamos día a día, e inspírate con los resultados en nuestras</em>
+    </p>
+    <h3 class="text-center tituloCards pb-3"> Publicaciones Recientes</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 py-5 cards">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" class="col">
+        <div class="card d-flex align-items-center">
+            <img src="./imgs/tatuajes/leon.jpeg" class="card-img-top" alt="león del zodiaco">
+            <div class="card-body text-center">
+                <p class="card-title"><strong>Signo del Zodiaco</strong></p>
+                <p class="card-text">Trabajo con línea fina, y un delicado sombreado. El diseño fue personalizado a gusto del cliente.</p>
+            </div>
+            <div class="mb-5 d-flex justify-content-around botonesPosts">
+              <a href="https://www.instagram.com/p/CvH1lC2ODbK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
             </div>
         </div>
+    </div>
         <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="col">
             <div class="card d-flex align-items-center">
-              <img src="./imgs/ejemplosAboutUs/foto2.png" class="card-img-top" alt="águila">
+              <img src="./imgs/ejemplosAboutUs/foto2.png" class="card-img-top" alt="águila en espalda">
                 <div class="card-body text-center">
                     <p class="card-title"><strong>Tatuaje de Águila</strong></p>
                     <p class="card-text">Hecho de manera FreeHand, inspirado en estilo Tradicional. Sombras hechas con Puntillismo.</p>
@@ -218,24 +225,36 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000"  class="col">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2500"  class="col">
             <div class="card d-flex align-items-center">
-              <img src="./imgs/ejemplosAboutUs/mariposas.jpeg" class="card-img-top" alt="mariposas">
+              <img src="./imgs/ejemplosAboutUs/mariposas.jpeg" class="card-img-top" alt="mariposas con sombreado">
                 <div class="card-body text-center">
                     <p class="card-title"><strong>Mariposas</strong></p>
-                    <p class="card-text">Trabajo con relleno en Puntillismo, un delicado sombreado, de línea fina, con terminaciones sólidas.</p>
+                    <p class="card-text">Trabajo con relleno en Puntillismo de barrido, sombreado, con línea de estructura.</p>
                 </div>
                 <div class="mb-5 d-flex justify-content-around botonesPosts">
                   <a href="https://www.instagram.com/reel/CzYtPTIu3bR/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" class="col">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000" class="col">
+          <div class="card d-flex align-items-center">
+              <img src="./imgs/tatuajes/dragonPuntillismo.png" class="card-img-top" alt="Dragón Chimuelo en la Luna, rodeado de estrellas">
+              <div class="card-body text-center">
+                  <p class="card-title"><strong>Chimuelo en la Luna</strong></p>
+                  <p class="card-text">Trabajo con línea fina, y un barrido de Puntillismo. La línea de contorno es invisíble.</p>
+              </div>
+              <div class="mb-5 d-flex justify-content-around botonesPosts">
+                <a href="https://www.instagram.com/p/CvH1lC2ODbK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
+              </div>
+          </div>
+      </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" class="col">
             <div class="card d-flex align-items-center">
-              <img src="./imgs/ejemplosAboutUs/foto6.png" class="card-img-top" alt="orca">
+              <img src="./imgs/ejemplosAboutUs/foto6.png" class="card-img-top" alt="orca sombreada, con un buzo">
                 <div class="card-body text-center">
                     <p class="card-title"><strong>Orca</strong></p>
-                    <p class="card-text">Puntillismo, aplicando línea fina y sombreado.</p>
+                    <p class="card-text">Hecha con Puntillismo, aplicando barrido, línea fina y sombreado en degradé.</p>
                 </div>
                 <div class="mb-5 d-flex justify-content-around botonesPosts">
                   <a href="https://www.instagram.com/p/Cuu7GmKv8is/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
@@ -244,28 +263,40 @@
         </div>
         <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="col">
             <div class="card d-flex align-items-center">
-              <img src="./imgs/ejemplosAboutUs/foto3.png" class="card-img-top" alt="Ancla">
+              <img src="./imgs/ejemplosAboutUs/foto3.png" class="card-img-top" alt="Ancla de boca">
                 <div class="card-body text-center">
                     <p class="card-title"><strong>Ancla de Boca</strong></p>
-                    <p class="card-text">Trabajo con color, estructurado y relleno sólido. Sin sombreado.</p>
+                    <p class="card-text">Trabajo con color, estructurado y relleno sólido. Aplicación de colores y bordes negros.</p>
                 </div>
                 <div class="mb-5 d-flex justify-content-around botonesPosts">
                   <a href="https://www.instagram.com/p/CvSq0Syp9_W/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000"  class="col">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2500"  class="col">
             <div class="card d-flex align-items-center">
-              <img src="./imgs/ejemplosAboutUs/foto5.png" class="card-img-top" alt="tobillo">
+              <img src="./imgs/ejemplosAboutUs/foto5.png" class="card-img-top" alt="pulsera de tobillo tribal">
                 <div class="card-body text-center">
                     <p class="card-title"><strong>Tobillera</strong></p>
-                    <p class="card-text">Trabajo con línea fina y relleno sólido. Diseño ergonómico.</p>
+                    <p class="card-text">Trabajo con línea fina y relleno sólido. Diseño ergonómico ajustado a la zona del tobillo.</p>
                 </div>
                 <div class="mb-5 d-flex justify-content-around botonesPosts">
                   <a href="https://www.instagram.com/p/Cy-rlj_uHrY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
                 </div>
             </div>
         </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000" class="col">
+          <div class="card d-flex align-items-center">
+              <img src="./imgs/tatuajes/zeus.png" class="card-img-top" alt="Dios Zeus co un sombrero de cabeza de león">
+              <div class="card-body text-center">
+                  <p class="card-title"><strong>Zeus y León</strong></p>
+                  <p class="card-text">Trabajo con línea gruesa, y barrido. El diseño fue personalizado a gusto del cliente.</p>
+              </div>
+              <div class="mb-5 d-flex justify-content-around botonesPosts">
+                <a href="https://www.instagram.com/p/CvH1lC2ODbK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="btn btn-primary">Ver Publicación</a>
+              </div>
+          </div>
+      </div>
     </div>
 </div>
   <!-- Fin de cards posts IG -->
@@ -275,26 +306,16 @@
     <h4 class="text-center pb-4 pt-4"><strong>Estudio de Tattoo en España, ¡Y donde estés!</strong></h4>
     <p>Al realizarte un tatuaje, necesitas un experto que sepa cómo hacerlo, en el cual puedas confiar. Para brindarte el mejor servicio, en Fonsink Tattoo nos hemos preparado formalmente, con los mejores cursos de aprendizaje, convenciones internacionales y seminarios, dictados por los tatuadores más reconocidos de toda España, Europa y América. Con esta base sólida, más los años de experiencia, nos aseguraremos de cumplir tus expectativas, y que así lleves en tu piel lo mejor de cada pieza de arte. Con nuestro experto, Elvis Machado, te brindamos un servicio óptimo y de calidad, con estrictos estándares de higiene y bioseguridad; y un ambiente relajado para que tengas la mejor experiencia en nuestro estudio. Puedes optar por diferentes estilos, entre los que destacamos el Tradicional, Neo Tradicional, Black and Grey, Realismo y Puntillismo.</p>
     <p>¡Inspírate! Nosotros haremos realidad tu sueño.</p>
-    <div id="demo" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <div id="carouselExampleSlidesOnly" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="./imgs/multimedia/videoLocal1.mp4" class="d-block w-100" muted autoplay loop></video>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video src="./imgs/multimedia/videoLocal1.mp4" class="d-block w-100" muted autoplay loop></video>
-          </div>
-          <div class="carousel-item">
-            <video src="./imgs/multimedia/videoLocal2.mp4" class="d-block w-100" muted autoplay loop></video>
-          </div>
+        <div class="carousel-item">
+          <video src="./imgs/multimedia/videoLocal2.mp4" class="d-block w-100" muted autoplay loop></video>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
+    </div>
   </div>
 </div>
   <!-- Fin Carrusel Videos -->

@@ -79,8 +79,12 @@ body {
   list-style: none;
   padding: 25px;
   background-size: cover;
+  .columnaLinks {
+    justify-content: right;
+    align-items: end;
+  }
   .nav-item {
-    padding: 40px;
+    padding: 10px;
   }
   .navbar img {
     margin-right: 25px;
@@ -184,14 +188,19 @@ body {
   }
 }
 .carruselIndex {
-  border: $bordes;
-  img {
-    height: 100vh;
+  .carousel-item {
+    object-fit: contain;
+    height: 700px;
   }
+    img {
+      border: $bordes;
+    }
+    p {
+      font-size: 18px;
+    }
 }
-
 .jumbotron {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   h3 {
     color: $colorBase3;
@@ -200,17 +209,19 @@ body {
   }
 }
 .videoPresentacion {
+  background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
+  background-size: cover;
   border-radius: 10px;
   display: flex;
   margin-top: 100px;
   flex-flow: column wrap;
+  margin-bottom: 100px;
   h3 {
     color: $colorBase3;
     text-align: center;
-    text-decoration: overline;
     font-size: 35px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-shadow: $sombraTextoWhite;
   }
   blockquote {
@@ -219,7 +230,6 @@ body {
 }
 .galeriaTrabajos {
   border-radius: 10px;
-  background-color: $colorFondo3;
   .foto {
     @include estiloFotos1();
     margin-top: 50px;
@@ -236,7 +246,11 @@ $colorCards2: rgb(41, 41, 41);
 $colorCards3: rgb(0, 0, 0);
 $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 .cartas {
+  background-color: $colorFondo3;
   margin-top: 50px;
+  h3 {
+    font-size: xx-large;
+  }
   .tituloCards {
     color: $colorBase3;
     text-shadow: $sombraTextoWhite;
@@ -247,7 +261,6 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   }
   .card {
     margin-top: 50px;
-    font-size: 18px;
     border: 3px solid black;
     border-radius: 5px;
     background-image: $fondoCards;  
@@ -255,25 +268,23 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   img {
     padding: 5px;
     height: 250px;
-    object-fit: cover;
   }
   a {
     @extend %estilosBotones;
   }
 }
 .carruselVideos {
-  background-color: $colorFondo3;
   h4 {
     color: $colorBase3;
     text-shadow: $sombraTextoWhite;
     text-decoration: overline;
+    font-size: xx-large;
   }
   p {
     text-align: center;
     text-shadow: $sombraTextoBlack;
   }
   .carousel-item {
-    height: 90vh;
     object-fit: cover;
   }
 }
@@ -562,11 +573,6 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 /* MEDIA QUERIES */
 /* medias de index */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .presentacion {
-    .fotoPulpo {
-      display: none;
-    }
- }
  .trabajosFotos {
   img {
     width: 200px;
@@ -593,7 +599,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     background-image: $fondoCards;
     @extend .cartas;
     border: $bordes;
-    height: 19rem;
+    height: 20rem;
     display: flex;
     align-items:center;
     img {

@@ -38,8 +38,12 @@ body {
   padding: 25px;
   background-size: cover;
 }
+.navbar .columnaLinks {
+  justify-content: right;
+  align-items: end;
+}
 .navbar .nav-item {
-  padding: 40px;
+  padding: 10px;
 }
 .navbar .navbar img {
   margin-right: 25px;
@@ -134,15 +138,19 @@ body {
   box-shadow: 2px 0px 10px 5px gold;
 }
 
-.carruselIndex {
-  border: 3px solid black;
+.carruselIndex .carousel-item {
+  object-fit: contain;
+  height: 700px;
 }
 .carruselIndex img {
-  height: 100vh;
+  border: 3px solid black;
+}
+.carruselIndex p {
+  font-size: 18px;
 }
 
 .jumbotron {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 .jumbotron h3 {
@@ -152,18 +160,20 @@ body {
 }
 
 .videoPresentacion {
+  background-image: url(../imgs/Background/abstract-green-background-free-vector.jpg);
+  background-size: cover;
   border-radius: 10px;
   display: flex;
   margin-top: 100px;
   flex-flow: column wrap;
+  margin-bottom: 100px;
 }
 .videoPresentacion h3 {
   color: black;
   text-align: center;
-  text-decoration: overline;
   font-size: 35px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-shadow: 2px 2px 5px white;
 }
 .videoPresentacion blockquote {
@@ -172,7 +182,6 @@ body {
 
 .galeriaTrabajos {
   border-radius: 10px;
-  background-color: rgba(34, 139, 34, 0.674);
 }
 .galeriaTrabajos .foto {
   border: 3px solid black;
@@ -190,7 +199,11 @@ body {
 
 /* fondo para cards */
 .cartas, .carruselProductos .card {
+  background-color: rgba(34, 139, 34, 0.674);
   margin-top: 50px;
+}
+.cartas h3, .carruselProductos .card h3 {
+  font-size: xx-large;
 }
 .cartas .tituloCards, .carruselProductos .card .tituloCards {
   color: black;
@@ -202,7 +215,6 @@ body {
 }
 .cartas .card, .carruselProductos .card .card {
   margin-top: 50px;
-  font-size: 18px;
   border: 3px solid black;
   border-radius: 5px;
   background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
@@ -210,22 +222,18 @@ body {
 .cartas img, .carruselProductos .card img {
   padding: 5px;
   height: 250px;
-  object-fit: cover;
-}
-.carruselVideos {
-  background-color: rgba(34, 139, 34, 0.674);
 }
 .carruselVideos h4 {
   color: black;
   text-shadow: 2px 2px 5px white;
   text-decoration: overline;
+  font-size: xx-large;
 }
 .carruselVideos p {
   text-align: center;
   text-shadow: 2px 2px 5px black;
 }
 .carruselVideos .carousel-item {
-  height: 90vh;
   object-fit: cover;
 }
 
@@ -502,9 +510,6 @@ body {
 /* MEDIA QUERIES */
 /* medias de index */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .presentacion .fotoPulpo {
-    display: none;
-  }
   .trabajosFotos img {
     width: 200px;
     height: 200px;
@@ -523,7 +528,7 @@ body {
   .carruselProductos .card {
     background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
     border: 3px solid black;
-    height: 19rem;
+    height: 20rem;
     display: flex;
     align-items: center;
   }
