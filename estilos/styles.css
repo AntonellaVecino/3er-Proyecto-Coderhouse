@@ -138,10 +138,6 @@ body {
   box-shadow: 2px 0px 10px 5px gold;
 }
 
-.carruselIndex .carousel-item {
-  object-fit: contain;
-  height: 700px;
-}
 .carruselIndex img {
   border: 3px solid black;
 }
