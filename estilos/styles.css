@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
-/* fondo para resaltar */
 /* mixin */
 .jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
-  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -33,21 +31,18 @@ body {
 }
 
 .navbar {
-  font-size: 25px;
-  background-color: green;
+  font-size: 20px;
+  background-color: rgb(34, 139, 34);
   list-style: none;
   padding: 25px;
   background-size: cover;
 }
-.navbar .columnaLinks {
+.navbar .columnaLinks li {
   justify-content: right;
   align-items: end;
 }
 .navbar .nav-item {
   padding: 10px;
-}
-.navbar .navbar img {
-  margin-right: 25px;
 }
 .navbar #barraDrop {
   color: yellow;
@@ -57,7 +52,7 @@ body {
 }
 
 .footer {
-  background-color: green;
+  background-color: rgb(34, 139, 34);
   font-size: 20px;
   margin-top: 25px;
 }
@@ -232,8 +227,7 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 .carruselVideos .carousel-item {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* About us */
@@ -337,8 +331,7 @@ body {
   align-items: center;
   flex-flow: column wrap;
   row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .estilos .titulosPresentacion {
   background-color: rgba(42, 201, 42, 0.679);
@@ -398,9 +391,7 @@ body {
 }
 
 .precios .carousel img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 600px;
+  object-fit: contain;
   height: 600px;
 }
 .precios .carousel h4 {
@@ -409,10 +400,8 @@ body {
 .precios .carousel .dibujoRosa {
   transform: rotate(90deg);
 }
-.precios .carousel .pezKoi {
-  transform: rotate(90deg);
-}
-.precios .carousel-caption {
+.precios h4,
+.precios p {
   font-weight: bolder;
 }
 
@@ -432,13 +421,30 @@ body {
   color: white;
 }
 
-#sector1, #sector2, #sector3, #sector4 {
+#sector1,
+#sector2,
+#sector3,
+#sector4 {
   background-color: rgba(42, 201, 42, 0.679);
 }
-#sector1 h2, #sector1 h3, #sector2 h2, #sector2 h3, #sector3 h2, #sector3 h3, #sector4 h2, #sector4 h3 {
+#sector1 h2,
+#sector1 h3,
+#sector2 h2,
+#sector2 h3,
+#sector3 h2,
+#sector3 h3,
+#sector4 h2,
+#sector4 h3 {
   text-shadow: 2px 2px 5px white;
 }
-#sector1 p, #sector1 li, #sector2 p, #sector2 li, #sector3 p, #sector3 li, #sector4 p, #sector4 li {
+#sector1 p,
+#sector1 li,
+#sector2 p,
+#sector2 li,
+#sector3 p,
+#sector3 li,
+#sector4 p,
+#sector4 li {
   text-shadow: 2px 2px 5px black;
 }
 
@@ -459,12 +465,12 @@ body {
   background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
   border: 3px solid black;
 }
-.carruselProductos .card .card-title, .carruselProductos .card .card-text {
+.carruselProductos .card .card-title,
+.carruselProductos .card .card-text {
   font-size: 16px;
 }
 .carruselProductos .card img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .carruselProductos .card a:hover {
   background-color: rgb(69, 255, 1);
@@ -517,13 +523,6 @@ body {
     width: 200px;
     height: 200px;
   }
-  .elEstudio .fotoMain {
-    height: 300px;
-  }
-  .elEstudio .localAbout img {
-    width: 200px;
-    height: 200px;
-  }
   .estilos img {
     width: 200px;
     height: 200px;
@@ -536,12 +535,13 @@ body {
     align-items: center;
   }
   .carruselProductos .card img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 150px;
     height: 150px;
   }
-  .carruselProductos .card .card-title, .carruselProductos .card .card-text, .carruselProductos .card a {
+  .carruselProductos .card .card-title,
+  .carruselProductos .card .card-text,
+  .carruselProductos .card a {
     font-size: 16px;
   }
   .carruselProductos .card a {
@@ -555,14 +555,93 @@ body {
   .cotizacion img {
     display: none;
   }
-  #sector1, #sector2, #sector3, #sector4, #sector5 {
+  #sector1,
+  #sector2,
+  #sector3,
+  #sector4,
+  #sector5 {
     font-size: 16px;
   }
   .formularios {
     font-size: 16px;
   }
-  .formularios .formulario1 .custom-input, .formularios .formulario1 .custom-input2, .formularios .formulario2 .custom-input, .formularios .formulario2 .custom-input2, .formularios .formulario3 .custom-input, .formularios .formulario3 .custom-input2, .formularios .formulario4 .custom-input, .formularios .formulario4 .custom-input2, .formularios .formulario5 .custom-input, .formularios .formulario5 .custom-input2 {
+  .formularios .formulario1 .custom-input,
+  .formularios .formulario1 .custom-input2,
+  .formularios .formulario2 .custom-input,
+  .formularios .formulario2 .custom-input2,
+  .formularios .formulario3 .custom-input,
+  .formularios .formulario3 .custom-input2,
+  .formularios .formulario4 .custom-input,
+  .formularios .formulario4 .custom-input2,
+  .formularios .formulario5 .custom-input,
+  .formularios .formulario5 .custom-input2 {
     width: 250px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 770px) {
+  .elEstudio .fotoMain {
+    height: 300px;
+  }
+  .elEstudio .localAbout img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .galeriaTrabajos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .trabajosFotos img {
+    width: 100px;
+    height: 100px;
+  }
+  .precios h4,
+  .precios p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .carruselProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carruselProductos .card {
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 998px) {
+  .elEstudio .fotoMain {
+    height: 300px;
+  }
+  .elEstudio .localAbout img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  .descripcionElvis {
+    font-size: 16px;
+  }
+  .descripcionElvis img {
+    height: 400px;
+  }
+  .descripcionElvis p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .descripcionElvis {
+    font-size: 20px;
+  }
+  .descripcionElvis img {
+    height: 500px;
+  }
+  .descripcionElvis p {
+    text-align: center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 998px) {
@@ -588,4 +667,6 @@ body {
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 2px 0px 10px 5px gold;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

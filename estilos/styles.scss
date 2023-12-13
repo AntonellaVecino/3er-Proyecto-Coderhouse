@@ -19,7 +19,7 @@ $colorFondo1: rgb(69, 255, 1);
 $colorFondo2: purple;
 $colorFondo3: rgba(34, 139, 34, 0.674);
 $colorResaltado: rgba(42, 201, 42, 0.679);
-/* fondo para resaltar */
+$fondoFooterNav: rgb(34, 139, 34);
 $colorCentro: rgb(9, 69, 9);
 $colorPrimero: #0b980b;
 $colorExterior: #21db21;
@@ -74,20 +74,19 @@ body {
   font-size: $tamañoFuenteBody;
 }
 .navbar {
-  font-size: 25px;
-  background-color: $colorBase1;
+  font-size: 20px;
+  background-color: $fondoFooterNav;
   list-style: none;
   padding: 25px;
   background-size: cover;
   .columnaLinks {
-    justify-content: right;
-    align-items: end;
+    li {
+      justify-content: right;
+      align-items: end;
+    }
   }
   .nav-item {
     padding: 10px;
-  }
-  .navbar img {
-    margin-right: 25px;
   }
   #barraDrop {
     color: $colorBase2;
@@ -97,7 +96,7 @@ body {
   }
 }
 .footer {
-  background-color: $colorBase1;
+  background-color: $fondoFooterNav;
   font-size: 20px;
   margin-top: 25px;
   .parteLogo {
@@ -189,10 +188,10 @@ body {
 }
 .carruselIndex {
   flex-wrap: wrap;
-    img {
-      border: $bordes;
-      width: 100%;
-    }
+  img {
+    border: $bordes;
+    width: 100%;
+  }
 }
 .jumbotron {
   font-size: 20px;
@@ -258,7 +257,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     margin-top: 50px;
     border: 3px solid black;
     border-radius: 5px;
-    background-image: $fondoCards;  
+    background-image: $fondoCards;
   }
   img {
     padding: 5px;
@@ -454,7 +453,6 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   .carousel {
     img {
       object-fit: contain;
-      width: 600px;
       height: 600px;
     }
     h4 {
@@ -463,11 +461,9 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     .dibujoRosa {
       transform: rotate(90deg);
     }
-    .pezKoi {
-      transform: rotate(90deg);
-    }
   }
-  .carousel-caption {
+  h4,
+  p {
     font-weight: bolder;
   }
 }
@@ -487,19 +483,24 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     }
   }
 }
-#sector1, #sector2, #sector3, #sector4 {
+#sector1,
+#sector2,
+#sector3,
+#sector4 {
   background-color: $colorResaltado;
-  h2, h3 {
+  h2,
+  h3 {
     text-shadow: $sombraTextoWhite;
   }
-  p, li {
+  p,
+  li {
     text-shadow: $sombraTextoBlack;
   }
 }
 #sector5 {
   h3 {
     text-shadow: $sombraTextoWhite;
-  } 
+  }
   p {
     text-shadow: $sombraTextoBlack;
   }
@@ -515,7 +516,8 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     background-image: $fondoCards;
     @extend .cartas;
     border: $bordes;
-    .card-title, .card-text {
+    .card-title,
+    .card-text {
       font-size: 16px;
     }
     img {
@@ -569,68 +571,147 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
 /* MEDIA QUERIES */
 /* medias de index */
 @media screen and (min-width: 320px) and (max-width: 767px) {
- .trabajosFotos {
-  img {
-    width: 200px;
-    height: 200px;
-  }
-}
-.elEstudio {
-  .fotoMain {
-    height: 300px;
-  }
-  .localAbout img {
-    width: 200px;
-    height: 200px;
-  }
-}
-.estilos {
-  img {
-    width: 200px;
-    height: 200px;
-  }
-}
- .carruselProductos {
-  .card {
-    background-image: $fondoCards;
-    @extend .cartas;
-    border: $bordes;
-    height: 20rem;
-    display: flex;
-    align-items:center;
+  .trabajosFotos {
     img {
-      object-fit: contain;
-      width: 150px;
-      height: 150px;
-    }
-    .card-title, .card-text, a {
-      font-size: 16px;
-    }
-    a {
-      padding: 0;
-    }
-    & a:hover {
-      @include botonesHover();
+      width: 200px;
+      height: 200px;
     }
   }
-}
-.cotizacion {
+  .estilos {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .carruselProductos {
+    .card {
+      background-image: $fondoCards;
+      @extend .cartas;
+      border: $bordes;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      img {
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+      }
+      .card-title,
+      .card-text,
+      a {
+        font-size: 16px;
+      }
+      a {
+        padding: 0;
+      }
+      & a:hover {
+        @include botonesHover();
+      }
+    }
+  }
+  .cotizacion {
     img {
       display: none;
     }
-}
-#sector1, #sector2, #sector3, #sector4, #sector5 {
-  font-size: 16px;
-}   
-.formularios {
-  font-size: 16px; 
-.formulario1, .formulario2, .formulario3, .formulario4, .formulario5 {
-  .custom-input, .custom-input2 {
-    width: 250px;
+  }
+  #sector1,
+  #sector2,
+  #sector3,
+  #sector4,
+  #sector5 {
+    font-size: 16px;
+  }
+  .formularios {
+    font-size: 16px;
+    .formulario1,
+    .formulario2,
+    .formulario3,
+    .formulario4,
+    .formulario5 {
+      .custom-input,
+      .custom-input2 {
+        width: 250px;
+      }
+    }
   }
 }
+@media screen and (min-width: 320px) and (max-width: 770px) {
+  .elEstudio {
+    .fotoMain {
+      height: 300px;
+    }
+    .localAbout img {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .galeriaTrabajos {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .trabajosFotos {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .precios {
+    h4,
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .carruselProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+      width: fit-content;
+    }
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 998px) {
+  .elEstudio {
+    .fotoMain {
+      height: 300px;
+    }
+    .localAbout img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  .descripcionElvis {
+    font-size: 16px;
+    img {
+      height: 400px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .descripcionElvis {
+    font-size: 20px;
+    img {
+      height: 500px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 998px) {
   .carruselIndex {
     p {
