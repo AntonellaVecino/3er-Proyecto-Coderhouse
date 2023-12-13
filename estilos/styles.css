@@ -501,6 +501,7 @@ body {
 .formularios .formulario3 {
   flex-flow: column wrap;
   background-color: #2c632c;
+  min-width: 320px;
 }
 .formularios .formulario4 {
   flex-flow: column wrap;

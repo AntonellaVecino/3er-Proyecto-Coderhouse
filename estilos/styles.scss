@@ -556,6 +556,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   .formulario3 {
     flex-flow: column wrap;
     background-color: #2c632c;
+    min-width: 320px;
   }
   .formulario4 {
     flex-flow: column wrap;
