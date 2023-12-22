@@ -14,9 +14,9 @@ $bordesHover: 3px solid rgb(0, 0, 0);
 $sombraTexto: 5px -2px 4px gold;
 $sombraTextoWhite: 2px 2px 5px white;
 $sombraTextoBlack: 2px 2px 5px black;
-$sombraBox: 2px 0px 10px 5px gold;
+$sombraBox: 2px 0px 10px 5px rgb(0, 0, 0);
 $colorFondo1: rgb(69, 255, 1);
-$colorFondo2: purple;
+$colorFondo2: rgb(34, 139, 34);
 $colorFondo3: rgba(34, 139, 34, 0.674);
 $colorResaltado: rgba(42, 201, 42, 0.679);
 $fondoFooterNav: rgb(34, 139, 34);
@@ -180,8 +180,8 @@ body {
     @include botonesHover;
   }
 }
-.carruselIndex {
-  flex-wrap: wrap;
+.carruselIndex {  
+  background-color: $colorFondo2;
   img {
     border: $bordes;
     width: 100%;
@@ -223,6 +223,7 @@ body {
     margin-top: 50px;
     width: 200px;
     height: 200px;
+    box-shadow: $sombraBox;
   }
   & .foto:hover {
     @include estiloFotosHover1();
@@ -249,9 +250,9 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   }
   .card {
     margin-top: 50px;
-    border: 3px solid black;
     border-radius: 5px;
     background-image: $fondoCards;
+    box-shadow: $sombraBox;
   }
   img {
     padding: 5px;
@@ -259,6 +260,9 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   }
   a {
     @extend %estilosBotones;
+  }
+  & a:hover {
+    @include botonesHover();
   }
 }
 .carruselVideos {
@@ -333,6 +337,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     width: 300px;
     height: 300px;
     transition: 0.5s;
+    box-shadow: $sombraBox;
   }
   & img:hover {
     transform: scale(0.98);
@@ -350,8 +355,10 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   }
   .fotoMain {
     height: 80vh;
+    box-shadow: $sombraBox;
   }
   .localAbout img {
+    box-shadow: $sombraBox;
     width: 300px;
     height: 300px;
     margin-bottom: 50px;
@@ -391,6 +398,8 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     text-shadow: $sombraTextoBlack;
   }
   img {
+    margin: 20px;
+    box-shadow: $sombraBox;
     width: 250px;
     height: 250px;
   }
@@ -509,7 +518,7 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
   .card {
     background-image: $fondoCards;
     @extend .cartas;
-    border: $bordes;
+    box-shadow: $sombraBox;
     .card-title,
     .card-text {
       font-size: 16px;
@@ -558,6 +567,14 @@ $fondoCards: radial-gradient($colorCards3, $colorCards2, $colorCards1);
     flex-flow: column wrap;
     .custom-input2 {
       width: 300px;
+    }
+  }
+  .botonForm {
+    input {
+      @extend %estilosBotones;
+    }
+    & input:hover {
+      @include botonesHover();
     }
   }
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Salsa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
 /* mixin */
-.jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
+.formularios .botonForm input, .jumbotronAbout a, .cartas a, .carruselProductos .card a, .presentacion .botonCallToAction {
   width: fit-content;
   text-align: center;
   margin: 10px;
@@ -131,11 +131,11 @@ body {
 .presentacion .botonCallToAction:hover {
   background-color: rgb(69, 255, 1);
   border: 3px solid rgb(0, 0, 0);
-  box-shadow: 2px 0px 10px 5px gold;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 
 .carruselIndex {
-  flex-wrap: wrap;
+  background-color: rgb(34, 139, 34);
 }
 .carruselIndex img {
   border: 3px solid black;
@@ -183,6 +183,7 @@ body {
   margin-top: 50px;
   width: 200px;
   height: 200px;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 .galeriaTrabajos .foto:hover {
   border: 5px solid gold;
@@ -208,14 +209,20 @@ body {
 }
 .cartas .card, .carruselProductos .card .card {
   margin-top: 50px;
-  border: 3px solid black;
   border-radius: 5px;
   background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 .cartas img, .carruselProductos .card img {
   padding: 5px;
   height: 250px;
 }
+.cartas a:hover, .carruselProductos .card a:hover {
+  background-color: rgb(69, 255, 1);
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
+}
+
 .carruselVideos h4 {
   color: black;
   text-shadow: 2px 2px 5px white;
@@ -243,7 +250,7 @@ body {
 .jumbotronAbout a:hover {
   background-color: rgb(69, 255, 1);
   border: 3px solid rgb(0, 0, 0);
-  box-shadow: 2px 0px 10px 5px gold;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 
 .descripcionElvis {
@@ -284,6 +291,7 @@ body {
   width: 300px;
   height: 300px;
   transition: 0.5s;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 .trabajosFotos img:hover {
   transform: scale(0.98);
@@ -302,8 +310,10 @@ body {
 }
 .elEstudio .fotoMain {
   height: 80vh;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 .elEstudio .localAbout img {
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
   width: 300px;
   height: 300px;
   margin-bottom: 50px;
@@ -344,6 +354,8 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 .estilos img {
+  margin: 20px;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
   width: 250px;
   height: 250px;
 }
@@ -463,7 +475,7 @@ body {
 }
 .carruselProductos .card {
   background-image: radial-gradient(rgb(0, 0, 0), rgb(41, 41, 41), rgb(88, 88, 88));
-  border: 3px solid black;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 .carruselProductos .card .card-title,
 .carruselProductos .card .card-text {
@@ -475,7 +487,7 @@ body {
 .carruselProductos .card a:hover {
   background-color: rgb(69, 255, 1);
   border: 3px solid rgb(0, 0, 0);
-  box-shadow: 2px 0px 10px 5px gold;
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
 }
 
 /* Formulario */
@@ -515,6 +527,11 @@ body {
 .formularios .formulario4 .custom-input2 {
   width: 300px;
 }
+.formularios .botonForm input:hover {
+  background-color: rgb(69, 255, 1);
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
+}
 
 /* MEDIA QUERIES */
 /* medias de index */
@@ -550,7 +567,7 @@ body {
   .carruselProductos .card a:hover {
     background-color: rgb(69, 255, 1);
     border: 3px solid rgb(0, 0, 0);
-    box-shadow: 2px 0px 10px 5px gold;
+    box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
   }
   .cotizacion img {
     display: none;
@@ -665,7 +682,7 @@ body {
   .carruselProductos a:active {
     background-color: rgb(69, 255, 1);
     border: 3px solid rgb(0, 0, 0);
-    box-shadow: 2px 0px 10px 5px gold;
+    box-shadow: 2px 0px 10px 5px rgb(0, 0, 0);
   }
 }
 
