@@ -136,10 +136,10 @@ body {
 
 .carruselIndex {
   background-color: rgb(34, 139, 34);
+  flex-flow: row wrap;
 }
 .carruselIndex img {
   border: 3px solid black;
-  width: 100%;
 }
 
 .jumbotron {

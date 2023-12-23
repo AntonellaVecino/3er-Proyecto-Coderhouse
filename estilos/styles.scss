@@ -182,9 +182,9 @@ body {
 }
 .carruselIndex {  
   background-color: $colorFondo2;
+  flex-flow: row wrap;
   img {
     border: $bordes;
-    width: 100%;
   }
 }
 .jumbotron {
